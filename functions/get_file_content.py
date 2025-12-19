@@ -1,4 +1,4 @@
-from config import MAX_CHARS
+from config.config import MAX_CHARS
 import os
 from google.genai import types
 

@@ -1,4 +1,4 @@
-from config import MAX_ITERS
+from config.config import MAX_ITERS
 from functions.call_function import call_function
 from functions.call_function import available_functions
 import argparse
@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 import argparse
-from prompts import system_prompt
+from config.prompts import system_prompt
 
 load_dotenv()
 api_key = os.environ.get("GEMINI_API_KEY")
