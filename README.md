@@ -16,7 +16,7 @@ The agent can:
 
 In this project, I have built an agentic workflow including:
 - **Tool Implementation**: Created modular Python functions (`get_files_info`, `get_file_content`, `write_file`, `run_python_file`) that the AI can invoke.
-- **Gemini Integration**: Configured the Google GenAI SDK to communicate with the Gemini 2.0 Flash model.
+- **Gemini Integration**: Configured the Google GenAI SDK to communicate with the Gemini 2.5 Flash model.
 - **Function Calling System**: Built a mechanism to parse the AI's tool call requests, execute the corresponding Python functions, and feed the results back to the model.
 - **REPL Loop**: Implemented a robust "Read-Eval-Print Loop" inside `main.py` that allows for multi-turn reasoning (the agent can call a tool, see the result, and decide the next step).
 - **Security & Safety**: Added safeguards like restricting file access to a specific `WORKING_DIRECTORY` to prevent the agent from modifying system files outside the sandbox.
